@@ -1,0 +1,13 @@
+import { AgentProvider } from './context/AgentContext';
+import { WorkflowControlCenter } from './components/apps/WorkflowControlCenter';
+
+function App() {
+  return (
+    <AgentProvider>
+      {/* 你原本的虛擬桌面組件結構 */}
+      <div className="desktop-env">
+        <WorkflowControlCenter />
+      </div>
+    </AgentProvider>
+  );
+}
